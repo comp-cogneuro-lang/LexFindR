@@ -1,0 +1,46 @@
+Package: LexFindR
+Title: Find related items and lexical dimensions in a lexicon
+Version: 1.0.0
+Date: 2020-10-17
+Authors@R: 
+    c(person(given = "ZhaoBin",
+           family = "Li",
+           role = c("aut", "cre"),
+           email = "liz2@carleton.edu"),
+      person(given = "Anne Marie", 
+             family = "Crinnion",
+             role = c("aut"),
+             email = "anne.crinnion@uconn.edu"),
+      person(given = "James S.",
+           family = "Magnuson",
+           role = c("aut"),
+           email = "james.magnuson@uconn.edu")) 
+Description: This package implements code to identify lexical competitors in a
+   given list of words. We include many of the standard competitor types used 
+   in spoken word recognition research, such as functions to find cohorts, 
+   neighbors, and rhymes, amongst many others. The package includes 
+   documentation for using a variety of lexicon files, including those with 
+   form codes made up of multiple letters (i.e., phoneme codes) and also basic
+   orthographies. Importantly, the code makes use of multiple CPU cores and
+   vectorization when possible, making it extremely fast and able to handle
+   large lexicons. Additionally, the package contains documentation for users 
+   to easily write new functions, allowing researchers to examine other 
+   relationships within a lexicon. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Suggests: 
+    tidyverse,
+    knitr,
+    rmarkdown,
+    testthat,
+    future.apply,
+    tictoc
+VignetteBuilder: knitr
+Depends: 
+    R (>= 2.10)
+URL: https://github.com/maglab-uconn/LexFindR
+BugReports: https://github.com/maglab-uconn/LexFindR/issues
+
