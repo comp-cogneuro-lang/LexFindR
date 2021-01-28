@@ -10,8 +10,8 @@
 #'   the target when 'd', 'a', and/or 's' is in neighbors respectively
 #' @param overlap (\emph{get_cohorts} only) Integer specifying the number of
 #'   onset phonemes to overlap for matching with the target word
-#' @param discount (\emph{get_rhymes} only) Integer specifying the number of
-#'   onset phonemes to discount for matching with the target word
+#' @param mismatch (\emph{get_rhymes} only) Integer specifying the number of
+#'   onset phonemes to mismatch for matching with the target word
 #'
 #' @return the indexes of the competitors in the lexical database
 #'
@@ -70,7 +70,7 @@ get_cohorts <- function(target, lexicon, sep = " ", form = FALSE, count = FALSE,
 #'
 #' @examples
 #' get_rhymes("AA R K", c("AA R K", "B AA R K", "B AA B"))
-get_rhymes <- function(target, lexicon, sep = " ", form = FALSE, count = FALSE, discount = 1) {
+get_rhymes <- function(target, lexicon, sep = " ", form = FALSE, count = FALSE, mismatch = 1) {
   # Check input and give warning as needed
   if (!check_input(target, lexicon, sep)) {
     return(NA)
@@ -83,17 +83,17 @@ get_rhymes <- function(target, lexicon, sep = " ", form = FALSE, count = FALSE, 
   sep <- escaped_list$sep
   split_target <- escaped_list$split_target
 
-  # When the target is longer than phonemes to discount, rhymes can be longer or
+  # When the target is longer than phonemes to mismatch, rhymes can be longer or
   # shorter than target, or else rhyme can only be longer
-  if (length(split_target) > discount) {
-    # Regex pattern includes optional phonemes `^.{,discount}`, and "^(((?!",
-    # sep, ").)+", sep, "){0,", discount, "}" to match rhymes longer than
-    # target, optional discounted phoneme in target dis_pat (e.g. target="A B C",
-    # discount=2, dis_pat=((A )?B )?) and overlap after the discounted phonemes
-    # according to paste0(split_target[-(1:discount)], collapse = sep), "$"
+  if (length(split_target) > mismatch) {
+    # Regex pattern includes optional phonemes `^.{,mismatch}`, and "^(((?!",
+    # sep, ").)+", sep, "){0,", mismatch, "}" to match rhymes longer than
+    # target, optional mismatched phoneme in target dis_pat (e.g. target="A B C",
+    # mismatch=2, dis_pat=((A )?B )?) and overlap after the mismatched phonemes
+    # according to paste0(split_target[-(1:mismatch)], collapse = sep), "$"
     dis_pat <- paste0(
-      paste0(rep("(", discount), collapse = ""),
-      paste0(split_target[1:discount],
+      paste0(rep("(", mismatch), collapse = ""),
+      paste0(split_target[1:mismatch],
         collapse = paste0(sep, ")?", collapse = "")
       ),
       sep,
@@ -101,15 +101,15 @@ get_rhymes <- function(target, lexicon, sep = " ", form = FALSE, count = FALSE, 
       collapse = ""
     )
     if (sep == "") {
-      pattern <- paste0("^.{0,", discount, "}", dis_pat, paste0(split_target[-(1:discount)], collapse = sep), "$")
+      pattern <- paste0("^.{0,", mismatch, "}", dis_pat, paste0(split_target[-(1:mismatch)], collapse = sep), "$")
     } else {
-      pattern <- paste0("^(((?!", sep, ").)+", sep, "){0,", discount, "}", dis_pat, paste0(split_target[-(1:discount)], collapse = sep), "$")
+      pattern <- paste0("^(((?!", sep, ").)+", sep, "){0,", mismatch, "}", dis_pat, paste0(split_target[-(1:mismatch)], collapse = sep), "$")
     }
   } else {
-    # Regex pattern includes optional phonemes `^.{,discount}`, and "^(((?!",
-    # sep, ").)+", sep, "){0,", discount, "}" to match rhymes longer than
-    # target, optional discounted phoneme in target dis_pat (e.g. target="A B",
-    # discount=2, dis_pat=(A )? now excluding the last phoneme, and overlap with
+    # Regex pattern includes optional phonemes `^.{,mismatch}`, and "^(((?!",
+    # sep, ").)+", sep, "){0,", mismatch, "}" to match rhymes longer than
+    # target, optional mismatched phoneme in target dis_pat (e.g. target="A B",
+    # mismatch=2, dis_pat=(A )? now excluding the last phoneme, and overlap with
     # the last phoneme according to split_target[length(split_target)], "$")
     if (length(split_target) > 1) {
       dis_pat <- paste0(
@@ -126,9 +126,9 @@ get_rhymes <- function(target, lexicon, sep = " ", form = FALSE, count = FALSE, 
       dis_pat <- ""
     }
     if (sep == "") {
-      pattern <- paste0("^.{0,", discount, "}", dis_pat, split_target[length(split_target)], "$")
+      pattern <- paste0("^.{0,", mismatch, "}", dis_pat, split_target[length(split_target)], "$")
     } else {
-      pattern <- paste0("^(((?!", sep, ").)+", sep, "){0,", discount, "}", dis_pat, split_target[length(split_target)], "$")
+      pattern <- paste0("^(((?!", sep, ").)+", sep, "){0,", mismatch, "}", dis_pat, split_target[length(split_target)], "$")
     }
   }
 

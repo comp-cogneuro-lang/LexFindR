@@ -24,8 +24,8 @@ the target when 'd', 'a', and/or 's' is in neighbors respectively}
 \item{overlap}{(\emph{get_cohorts} only) Integer specifying the number of
 onset phonemes to overlap for matching with the target word}
 
-\item{discount}{(\emph{get_rhymes} only) Integer specifying the number of
-onset phonemes to discount for matching with the target word}
+\item{mismatch}{(\emph{get_rhymes} only) Integer specifying the number of
+onset phonemes to mismatch for matching with the target word}
 }
 \value{
 the indexes of the competitors in the lexical database

@@ -10,7 +10,7 @@ get_rhymes(
   sep = " ",
   form = FALSE,
   count = FALSE,
-  discount = 1
+  mismatch = 1
 )
 }
 \arguments{
@@ -24,8 +24,8 @@ get_rhymes(
 
 \item{count}{Whether to return count of words}
 
-\item{discount}{(\emph{get_rhymes} only) Integer specifying the number of
-onset phonemes to discount for matching with the target word}
+\item{mismatch}{(\emph{get_rhymes} only) Integer specifying the number of
+onset phonemes to mismatch for matching with the target word}
 }
 \value{
 the indexes of the competitors in the lexical database

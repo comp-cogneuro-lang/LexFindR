@@ -68,7 +68,7 @@ lexicon <- Reduce(
 )
 
 test_that("three phone rhyme third onset is correct", {
-  expect_setequal(lexicon[get_rhymes(target, lexicon, discount = 2)], rhyme)
+  expect_setequal(lexicon[get_rhymes(target, lexicon, mismatch = 2)], rhyme)
 })
 
 target <- c("AA")
@@ -85,7 +85,7 @@ lexicon <- Reduce(
 )
 
 test_that("one phone rhyme third onset is correct", {
-  expect_setequal(lexicon[get_rhymes(target, lexicon, discount = 2)], rhyme)
+  expect_setequal(lexicon[get_rhymes(target, lexicon, mismatch = 2)], rhyme)
 })
 
 
@@ -103,5 +103,5 @@ lexicon <- Reduce(
 )
 
 test_that("two phone rhyme third onset is correct", {
-  expect_setequal(lexicon[get_rhymes(target, lexicon, discount = 2)], rhyme)
+  expect_setequal(lexicon[get_rhymes(target, lexicon, mismatch = 2)], rhyme)
 })
