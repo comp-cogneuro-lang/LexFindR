@@ -5,6 +5,8 @@
 
 <!-- badges: start -->
 
+[![Travis build
+status](https://travis-ci.com/maglab-uconn/LexFindR.svg?branch=master)](https://travis-ci.com/maglab-uconn/LexFindR)
 <!-- badges: end -->
 
 This package allows language researchers to generate lexical competitors
@@ -130,7 +132,6 @@ Often, however, we will want to find competitors for each word in our
 lexicon. Using the *lapply* function, this is possible:
 
 ``` r
-
 # define the list of target words to compute cohorts for
 target_df <- slex
 
@@ -174,7 +175,6 @@ In order to get faster run times, we can make use of the package
 with a larger lexicon, we replace *lapply* with *future\_lapply*:
 
 ``` r
-
 library(future.apply)
 
 # get the number of cores

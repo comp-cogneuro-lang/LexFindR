@@ -7,4 +7,7 @@ r:
   - devel
 cache: packages
 warnings_are_errors: true
-sudo: required
+os:
+- linux
+- osx
+- windows

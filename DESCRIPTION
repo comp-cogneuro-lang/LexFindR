@@ -13,7 +13,7 @@ Authors@R:
              email = "anne.crinnion@uconn.edu"),
       person(given = "James S.",
            family = "Magnuson",
-           role = c("aut"),
+           role = c("aut", "cph"),
            email = "james.magnuson@uconn.edu")) 
 Description: Implements code to identify lexical competitors in a
    given list of words. We include many of the standard competitor types used 
