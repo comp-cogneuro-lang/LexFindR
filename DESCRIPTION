@@ -1,7 +1,7 @@
 Package: LexFindR
-Title: Find related items and lexical dimensions in a lexicon
+Title: Find Related Items and Lexical Dimensions in a Lexicon
 Version: 1.0.0
-Date: 2020-10-17
+Date: 2021-03-08
 Authors@R: 
     c(person(given = "ZhaoBin",
            family = "Li",
@@ -15,7 +15,7 @@ Authors@R:
            family = "Magnuson",
            role = c("aut"),
            email = "james.magnuson@uconn.edu")) 
-Description: This package implements code to identify lexical competitors in a
+Description: Implements code to identify lexical competitors in a
    given list of words. We include many of the standard competitor types used 
    in spoken word recognition research, such as functions to find cohorts, 
    neighbors, and rhymes, amongst many others. The package includes 
