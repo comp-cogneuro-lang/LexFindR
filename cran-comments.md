@@ -4,7 +4,7 @@
 * win-builder oldrel, release and devel
 
 ## R CMD check results
-There were no ERRORs, WARNINGs or NOTEs
+No ERRORs or WARNINGs.
 
 2 NOTEs: 
 
