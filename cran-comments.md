@@ -6,7 +6,14 @@
 ## R CMD check results
 There were no ERRORs, WARNINGs or NOTEs
 
-Possible NOTE: 1st submission to CRAN
+2 NOTEs: 
+
+* New submission
+
+* Possibly mis-spelled words in DESCRIPTION:
+  vectorization (25:4)
+  
+  `vectorization` is not mis-spelled
 
 ## Downstream dependencies
 None
