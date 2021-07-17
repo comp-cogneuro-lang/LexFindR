@@ -1,7 +1,7 @@
 Package: LexFindR
 Title: Find Related Items and Lexical Dimensions in a Lexicon
 Version: 1.0.0
-Date: 2021-03-08
+Date: 2021-07-17
 Authors@R: 
     c(person(given = "ZhaoBin",
            family = "Li",
