@@ -1,6 +1,6 @@
 ---
 title: "LexFindR vignette"
-author: "ZhaoBin Li"
+author: "ZhaoBin Li, Anne Marie Crinnion, and James S. Magnuson"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
