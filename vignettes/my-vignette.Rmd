@@ -34,6 +34,9 @@ converted to the designed transcriptions.
 
 # Installation
 ```{r installation, eval = FALSE}
+# Install LexFindR from CRAN
+install.packages("LexFindR")
+
 # Or the development version from GitHub:
 # install.packages("devtools")
 devtools::install_github("maglab-uconn/LexFindR")
