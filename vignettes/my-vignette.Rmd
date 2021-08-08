@@ -181,7 +181,9 @@ glimpse(slex_rhymes)
 library(future.apply)
 library(tictoc)
 
-plan(multisession, workers = availableCores())
+# using two cores for demo or else 
+# set `workers` to availableCores() to use all cores
+plan(multisession, workers = 2)
 
 glimpse(lemmalex)
 
@@ -236,7 +238,11 @@ lexicon_df <- target_df
 
 # Prepare for parallelizing
 # 1. how many cores do we have?
-num_cores <- availableCores()
+# num_cores <- availableCores()
+
+# using two cores for demo
+num_cores <- 2
+
 print(paste0("Using num_cores: ", num_cores))
 # 2. now let future.apply figure out how to optimize parallel
 #    division of labor over cores

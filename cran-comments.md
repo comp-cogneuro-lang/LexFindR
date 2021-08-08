@@ -17,3 +17,8 @@ No ERRORs or WARNINGs.
 
 ## Downstream dependencies
 None
+
+## Resubmission
+* Limit cores to 2 in README and vignette
+
+* Add reference to DESCRIPTION 

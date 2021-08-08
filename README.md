@@ -177,8 +177,12 @@ with a larger lexicon, we replace *lapply* with *future\_lapply*:
 ``` r
 library(future.apply)
 
-# get the number of cores
-num_cores <- availableCores()
+# get the total number of cores
+# num_cores <- availableCores()
+
+# using two cores for demo
+num_cores <- 2
+
 plan(multisession, workers = num_cores)
 
 # we use a larger lexicon here
@@ -201,4 +205,7 @@ cohorts above, the frequencies, etc.
 ## Further use and information
 
 For much more detailed discussion of the package and its features, refer
-to MANUSCRIPT REFERENCE HERE.
+to: Li, Z., Crinnion, A. M., & Magnuson, J. S. (accepted). LexFindR: A
+fast, simple, and extensible R package for finding similar words in a
+lexicon. Behavior Research Methods.
+<https://magnuson.psy.uconn.edu/wp-content/uploads/sites/1140/2021/02/lexfindr-brm-rev-2021-02-25.pdf>

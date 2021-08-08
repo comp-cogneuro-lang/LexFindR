@@ -15,17 +15,19 @@ Authors@R:
            family = "Magnuson",
            role = c("aut", "cph"),
            email = "james.magnuson@uconn.edu")) 
-Description: Implements code to identify lexical competitors in a
-   given list of words. We include many of the standard competitor types used 
-   in spoken word recognition research, such as functions to find cohorts, 
-   neighbors, and rhymes, amongst many others. The package includes 
-   documentation for using a variety of lexicon files, including those with 
-   form codes made up of multiple letters (i.e., phoneme codes) and also basic
-   orthographies. Importantly, the code makes use of multiple CPU cores and
-   vectorization when possible, making it extremely fast and able to handle
-   large lexicons. Additionally, the package contains documentation for users 
-   to easily write new functions, allowing researchers to examine other 
-   relationships within a lexicon. 
+Description: Implements code to identify lexical competitors in a given list
+  of words. We include many of the standard competitor types used in spoken word
+  recognition research, such as functions to find cohorts, neighbors, and
+  rhymes, amongst many others. The package includes documentation for using a
+  variety of lexicon files, including those with form codes made up of multiple
+  letters (i.e., phoneme codes) and also basic orthographies. Importantly, the
+  code makes use of multiple CPU cores and vectorization when possible, making
+  it extremely fast and able to handle large lexicons. Additionally, the package
+  contains documentation for users to easily write new functions, allowing
+  researchers to examine other relationships within a lexicon. Li, Z., Crinnion,
+  A. M., & Magnuson, J. S. (2021) "LexFindR: A fast, simple, and extensible R
+  package for finding similar words in a lexicon."
+  <https://magnuson.psy.uconn.edu/wp-content/uploads/sites/1140/2021/02/lexfindr-brm-rev-2021-02-25.pdf>
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
