@@ -4,9 +4,6 @@
 # LexFindR
 
 <!-- badges: start -->
-
-[![Travis build
-status](https://travis-ci.com/maglab-uconn/LexFindR.svg?branch=master)](https://travis-ci.com/maglab-uconn/LexFindR)
 <!-- badges: end -->
 
 This package allows language researchers to generate lexical competitors

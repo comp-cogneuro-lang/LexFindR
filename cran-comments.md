@@ -1,3 +1,7 @@
+## Resubmission
+
+Removed invalid URL
+
 ## Update
 
 Change reference in DESCRIPTION to psyarxiv
