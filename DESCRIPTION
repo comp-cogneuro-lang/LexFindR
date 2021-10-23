@@ -1,7 +1,7 @@
 Package: LexFindR
 Title: Find Related Items and Lexical Dimensions in a Lexicon
-Version: 1.0.1
-Date: 2021-08-20
+Version: 1.0.2
+Date: 2021-10-23
 Authors@R: 
     c(person(given = "ZhaoBin",
            family = "Li",
@@ -24,7 +24,10 @@ Description: Implements code to identify lexical competitors in a given list
   code makes use of multiple CPU cores and vectorization when possible, making
   it extremely fast and able to handle large lexicons. Additionally, the package
   contains documentation for users to easily write new functions, allowing
-  researchers to examine other relationships within a lexicon. <https://psyarxiv.com/8dyru/>.
+  researchers to examine other relationships within a lexicon. 
+  Preprint: <https://psyarxiv.com/8dyru/>. Open access: <https://rdcu.be/cyH0M>. 
+  Citation: Li, Z., Crinnion, A.M. & Magnuson, J.S. (2021). 
+  <doi:10.3758/s13428-021-01667-6>.
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true

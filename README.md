@@ -202,4 +202,8 @@ cohorts above, the frequencies, etc.
 ## Further use and information
 
 For much more detailed discussion of the package and its features, refer
-to <https://psyarxiv.com/8dyru/>
+to LexFindR manusript. Preprint: <https://psyarxiv.com/8dyru/>. Open
+access: <https://rdcu.be/cyH0M>. Citation: "Li, Z., Crinnion, A.M. &
+Magnuson, J.S. (2021). LexFindR: A fast, simple, and extensible R
+package for finding similar words in a lexicon. Behavior Research
+Methods, 1-15. <https://doi.org/10.3758/s13428-021-01667-6>.

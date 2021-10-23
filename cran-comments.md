@@ -1,15 +1,11 @@
-## Resubmission
-
-Removed invalid URL
-
 ## Update
 
-Change reference in DESCRIPTION to psyarxiv
+Add publication reference in DESCRIPTION and README and CITATION
 
 ## Test environments
-* macOS Big Sur 11.2.3 Intel, devel
-* ubuntu Xenial AMD64 on Travis-CI, oldrel, release and devel
-* win-builder oldrel, release and devel
+* macOS Big Sur Intel
+* win-builder
+* r-hub
 
 ## R CMD check results
 No ERRORs or WARNINGs or NOTEs
