@@ -1,5 +1,7 @@
-## Update
+## Resubmission
+Moved open access url 
 
+## Update
 Add publication reference in DESCRIPTION and README and CITATION
 
 ## Test environments
@@ -8,7 +10,9 @@ Add publication reference in DESCRIPTION and README and CITATION
 * r-hub
 
 ## R CMD check results
-No ERRORs or WARNINGs or NOTEs
+1 NOTE: 
+* Possibly misspelled words in DESCRIPTION
+  Not misspelled
 
 ## Downstream dependencies
 None
