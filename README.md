@@ -5,7 +5,6 @@
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/maglab-uconn/LexFindR/workflows/R-CMD-check/badge.svg)](https://github.com/maglab-uconn/LexFindR/actions)
 [![R-CMD-check](https://github.com/maglab-uconn/LexFindR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/maglab-uconn/LexFindR/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
