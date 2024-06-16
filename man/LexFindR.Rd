@@ -2,6 +2,7 @@
 % Please edit documentation in R/LexFindR.R
 \docType{package}
 \name{LexFindR}
+\alias{LexFindR-package}
 \alias{LexFindR}
 \title{LexFindR: A package for finding related items and lexical dimensions in a
 lexicon.}
@@ -16,5 +17,23 @@ code makes use of multiple CPU cores and vectorization when possible, making
 it extremely fast and able to handle large lexicons. Additionally, the
 package contains documentation for users to easily write new functions,
 allowing researchers to examine other relationships within a lexicon.
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/maglab-uconn/LexFindR}
+  \item Report bugs at \url{https://github.com/maglab-uconn/LexFindR/issues}
+}
+
+}
+\author{
+\strong{Maintainer}: ZhaoBin Li \email{li_zhaobin@icloud.com}
+
+Authors:
+\itemize{
+  \item Anne Marie Crinnion \email{anne.crinnion@uconn.edu}
+  \item James S. Magnuson \email{james.magnuson@uconn.edu} [copyright holder]
+}
+
 }
 \keyword{internal}

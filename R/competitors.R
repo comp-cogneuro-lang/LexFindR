@@ -16,7 +16,7 @@
 #' @return the indexes of the competitors in the lexical database
 #'
 #' @keywords internal
-get_generic <- function(target, lexicon, neighbors, sep, form, count, overlap) {
+get_generic <- function(target, lexicon, neighbors, sep, form, count, overlap, mismatch) {
   UseMethod("get_generic")
 }
 

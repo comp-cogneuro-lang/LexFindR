@@ -4,7 +4,7 @@
 \alias{get_generic}
 \title{Get competitors in spoken word recognition}
 \usage{
-get_generic(target, lexicon, neighbors, sep, form, count, overlap)
+get_generic(target, lexicon, neighbors, sep, form, count, overlap, mismatch)
 }
 \arguments{
 \item{target}{Character string containing a target word}
