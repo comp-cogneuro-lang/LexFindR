@@ -1,6 +1,6 @@
 citHeader("To cite LexFindR in publications use:")
 
-citEntry(entry = "Article",
+bibEntry(entry = "Article",
   title="{LexFindR}: A Fast, simple, and extensible {R} package for finding similar words in a lexicon",
   author=c(person(given = "ZhaoBin",
            family = "Li",
