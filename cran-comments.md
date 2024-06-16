@@ -17,4 +17,13 @@ Add publication reference in DESCRIPTION and README and CITATION
 ## Downstream dependencies
 None
 
-
+## NOTE
+  Maintainer: ‘ZhaoBin Li <li_zhaobin@icloud.com>’
+  
+  New submission
+  
+  Package was archived on CRAN
+  
+  CRAN repository db overrides:
+    X-CRAN-Comment: Archived on 2024-04-20 as issues were not corrected
+      despite reminders.
